@@ -1,0 +1,12 @@
+mat1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+mat2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+s = []
+for i in range(len(mat1)):
+    c =[]
+    for j in range(len(mat1[0])):
+        ans = 0
+        for k in range(len(mat1[0])):
+            ans += mat1[i][k]*mat2[k][j]
+        c.append(ans)
+    s.append(c)
+print(s)
